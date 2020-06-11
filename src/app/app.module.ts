@@ -1,16 +1,44 @@
+
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import{HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavComponent } from './components/shared/nav/nav.component';
+
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FiltersComponent } from './components/shopping-cart/filters/filters.component';
+import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
+import { CartComponent } from './components/shopping-cart/cart/cart.component';
+import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
+import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { SigninComponent } from './components/signin/signin.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+  
+    FooterComponent,
+    ShoppingCartComponent,
+    FiltersComponent,
+    ProductListComponent,
+    CartComponent,
+    CartItemComponent,
+    ProductItemComponent,
+    
+    SigninComponent,
+    
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+
+<form  [formGroup]="data" (ngSubmit)="clickdata()" class="form-group">
+  <label>First Name</label>
+  <input class="form-control" formControlName="name" type="text" name="name">
+  
+  <br>
+  <label>Last Name</label>
+  <input class="form-control" formControlName="lastname" type="text" name="lstname">
+  <br>
+  <label>email</label>
+  <input class="form-control" formControlName="email" type="mail" name="email">
+  <br>
+  <label>password</label>
+  <input class="form-control" formControlName="password" type="password" name="password">
+  <br>
+  <input class="btn btn-danger" value="submit" [disabled]="!data.valid"  type="submit">
+</form>
